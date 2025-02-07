@@ -58,7 +58,7 @@ async function mostViewed(){
   <div class="card-body">
     <h5 class="card-title">${category.firstName} ${category.lastName}</h5>
     <h5 class="card-text">${category.jobTitle.length > 20 ? category.jobTitle.slice(0, 18) + "..." : category.jobTitle}</h5>
-    <a href="#" class="btn btn-primary">Profile View</a>
+    <a class="btn btn-primary">Profile View</a>
   </div>
 </div>
             
