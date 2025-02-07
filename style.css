@@ -255,7 +255,7 @@ body{
     width: 500px;
 }
 .containers{
-    width: 1077px;
+    width: 100%;
     height: 400px;
     background-color: #5d50d2;
 }
@@ -316,6 +316,11 @@ body{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+    }.containers{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
     }
   }
   
