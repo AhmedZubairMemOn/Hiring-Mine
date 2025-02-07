@@ -1,6 +1,6 @@
 body{
     background-image: linear-gradient(180deg, #ffffff 0%, #eeebff 69.79%, #ebe8ff 99.99%, #e1deff 100%);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .heading{
     font-size: 80px;
