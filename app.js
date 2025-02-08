@@ -15,7 +15,7 @@ dark.addEventListener("click", () => {
 });
 async function jobsDetail(){
     try{
-        const jobs = await fetch("https://backend-prod.app.hiringmine.com/api/jobAds/all?limit=9&pageNo=1&keyWord=&category=&isPending=false")
+        const jobs = await fetch("https://hiringmine-railway-production.up.railway.app/api/jobAds/all?limit=9&pageNo=1&keyWord=&category=&isPending=false")
         const jobsJson = await jobs.json()
         console.log(jobsJson);
         
@@ -44,7 +44,7 @@ jobsDetail()
 
 async function mostViewed(){
     try{
-        const view = await fetch("https://backend-prod.app.hiringmine.com/api/users/home?sortBy=mostViewed")
+        const view = await fetch("https://hiringmine-railway-production.up.railway.app/api/users/home?sortBy=mostViewed")
         
         
         const access = await view.json()
@@ -54,7 +54,7 @@ async function mostViewed(){
         .map((category) =>{
             return `
             <div class="card"style="width: 18rem;" id="cards">
-  <img src="${category.profilePic || './download.jpg'}" class="card-img-top" alt="...">
+  <img src="${category.profilePic || './download.jpg'}" class="card-img-top picture" alt="...">
   <div class="card-body">
     <h5 class="card-title">${category.firstName} ${category.lastName}</h5>
     <h5 class="card-text">${category.jobTitle.length > 20 ? category.jobTitle.slice(0, 18) + "..." : category.jobTitle}</h5>

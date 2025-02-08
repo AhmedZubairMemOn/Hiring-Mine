@@ -298,6 +298,9 @@ body{
 #Dark:hover{
     background-color: darkgray;
 }
+.picture{
+    height: 200px;
+}
 @media (max-width: 992px) {
     .navbar-nav {
       text-align: center;
